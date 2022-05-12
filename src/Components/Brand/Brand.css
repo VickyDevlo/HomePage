@@ -1,0 +1,10 @@
+.Brand-Name{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.brand {
+   margin: 5px;
+   width: 210px;
+}
+

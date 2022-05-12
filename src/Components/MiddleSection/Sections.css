@@ -1,0 +1,96 @@
+.Section-one{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 19px;
+}
+.Section-one img{
+    margin-top: 10px;
+    height: 197px;
+    width: 663px;
+}
+.Section-two {
+    display: flex;
+    width: 680px;
+    padding-left: 20px;
+    
+}
+.Section-two img{
+    margin-left: -10px;
+    width: 670px;
+    height: 227px;
+}
+.Section-three{
+    display: flex;
+   
+}
+.Section-three img{
+   max-width: 150px;
+}
+.section-three{
+    display: flex;
+    margin: 10px;
+    width:665px;
+    height: 155px;
+    background-color: rgb(231,231,229);
+}
+.View-btn{
+    border: none;
+    background-color: transparent;
+    color: #cc0000;
+    font-size: 15px;
+    margin-left: 30px;
+ 
+}
+p{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #212529;
+    max-width: 40px;
+}
+.Txt-Line{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #212529;
+    max-width: 400px;
+}
+.section-four{
+    display: flex;
+    position: relative;
+    top: -165px;
+    left: 668px;
+    margin: 10px;
+    width:665px;
+    height: 155px;
+    background-color: rgb(231,231,229);
+}
+.Cat{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    max-width: 400px;
+}
+.Product-line{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    max-width: 400px;
+}
+.View-bttn{
+    border: none;
+    background-color: transparent;
+    color: #cc0000;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.Product-title{
+    text-align: center;
+    font-size: 19.5px;
+    font-weight: bold;
+    display: block;
+    color: #101113;
+    margin-top: -155px;
+}

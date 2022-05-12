@@ -1,0 +1,22 @@
+.Signup-Wrapper{
+    background-color: #f3f3f3;
+    position: relative;
+    
+    z-index: 999;
+}
+.Sign-up-Page{
+    display: flex;
+}
+.User_id{
+    font-size: 12px;
+    display: block;
+}
+.input-text{
+    width: 250px;
+    height: 30px;  
+}
+.Save-user{
+    border: unset;
+    cursor: pointer;
+    color: #6666;
+}

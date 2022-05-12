@@ -1,0 +1,40 @@
+.Footer-Copyright{
+    background-color: #444;
+    text-align: center;
+    padding: 34px 0;
+}
+/* .Copyright-Wrap{
+    max-width: 1440px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+.AllRight{
+    border: unset;
+    cursor: default;
+    font-size: 13px;
+    color: white;
+}
+.TermCondition{
+    margin: 10px;
+}
+.TermCondition .terms{
+    font-size: 13px;
+    padding: 0 8px;
+    margin: 8px;
+    border-right: 1px solid rgb(160, 157, 157);
+}
+.TermCondition .privacy{
+    font-size: 13px;
+    margin-right: 2px;
+    padding: 0 8px;
+    margin: 0px;
+    border-right: 1px solid rgb(160, 157, 157);
+}
+.TermCondition .staplesProf{
+    font-size: 13px;
+    margin-right: 2px;
+    padding: 0 8px;
+}

@@ -1,0 +1,30 @@
+.Wrapper{
+    display: inline-block;
+    justify-content: center;
+    
+}
+.Product-img{
+    margin-left: -20px;
+    
+}
+.name{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.Card-img{  
+    margin-left:15px;
+    overflow: hidden;
+    border: 1px solid #f3f3f3;
+    width: 320px;
+}
+
+.Img-Link{
+    text-align: center;
+    font-size: 13px;
+    color: #c00;
+    text-decoration: none;
+}
+.Img-Link:hover{
+    color: #c00;
+}

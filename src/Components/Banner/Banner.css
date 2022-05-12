@@ -1,0 +1,69 @@
+.Banner .Links{
+    display: flex;
+}
+.Links img{
+    height: auto;
+    width: 640px;
+    margin: 16px;
+}
+.Img-Banner{
+    display: flex;
+}
+.img img{
+    height: auto;
+    width: 655px;
+    margin: 5px;
+}
+.Tag-line{
+    max-width: 509px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.Tag-line-two{
+    max-width: 509px;
+    position: relative;
+    top: -136px;
+    left: 699px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.View-Now-btn {
+    color: #cc0000;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 245px;
+    font-size: 13px;
+}
+.View-Now-btn:hover{
+    color: #cc0000;
+}
+.View-Now-bttn {
+    color: #cc0000;
+    position: relative;
+    top:-140px;
+    left: 700px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 245px;
+    font-size: 13px;
+}
+.View-Now-bttn:hover{
+    color: #cc0000;
+}
+.Line{
+    text-align: center;
+}
+.h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+.Exl{
+    border: unset;
+    cursor: unset;
+    color: #cc0000;
+    font-size: 19px;
+    font-weight: bold;
+}

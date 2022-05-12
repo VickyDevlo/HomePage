@@ -1,0 +1,41 @@
+.Social-media-Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Social-media{
+    width: 100%;
+    background-color: rgb(102,102,102);
+    padding: 10px;
+}
+.Joinus{
+    border: unset;
+    color: white;
+    font-size: 13px;
+    margin: 0 0 8px;
+    font-weight: 700;
+    cursor: unset;
+
+}
+.Icons{
+    border: unset;
+    color: white;
+    font-size: large;
+}
+.Logo-icons {
+    display: flex;
+    justify-content: end;
+    margin-top: -27px;
+}
+.logo-link-one img{
+    background-color: transparent;
+    width: 110px;
+    margin: 10px;
+    margin-top: -10px;
+}
+.logo-link-two img{
+    background-color: transparent;
+    width: 180px;
+    height: 38px;
+    margin-top: -10px;
+}
