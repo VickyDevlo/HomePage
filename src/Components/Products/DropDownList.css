@@ -289,17 +289,3 @@
     display: inline-block;
     font-size: 13px;
 }
-.Inner-Product{
-    max-width: 920px;
-    background: rgb(100, 31, 31);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    min-height: 750px;
-    transition: all .2s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    margin: 20px auto 0;
-}
