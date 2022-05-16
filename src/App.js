@@ -32,7 +32,7 @@ function App() {
       <Router>
          <Nav />
         <DropDownList />
-        {/* <Slider/>
+        <Slider/>
         <Section />
         <Products image={Papper} name='Paper' link='/paper'/>
         <Products image={Toner} name='Ink & Toner' link='/inktoner'/>
@@ -92,7 +92,7 @@ function App() {
          navlink3='/membership'
          />
         <SocialMedia />
-        <Copyright />   */}
+        <Copyright />  
       </Router> 
     </div>
   );
