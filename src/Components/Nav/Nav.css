@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e7e7e7;
-
 }
-
 .Header-Top .Select_Opt {
     padding: 10px 1px 8px 8px;
     border: 0;
@@ -13,7 +11,6 @@
     font-size: 11px;
     color: #666;
 }
-
 span {
     color: #2a78c6;
     cursor: pointer;
@@ -21,19 +18,16 @@ span {
     padding: 10px 10px 8px 8px;
     border-left: 1px solid #e7e7e7;
 }
-
 .Middle-Section {
     border-bottom: 1px solid #e7e7e7;
     height: 74px;
 }
-
 .Serach-Field {
     margin-left: 90px;
     width: 460px;
     height: 40px;
     position: relative;
 }
-
 input[type=text],
 select {
     padding: 12px;
@@ -41,10 +35,9 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 .Search-Btn {
     background-color: #444;
-    top: 47px;
+    top: 42px;
     left: 695px;
     position: absolute;
     color: white;
@@ -54,11 +47,9 @@ select {
     border-radius: 0 3px 3px 0px;
     cursor: pointer;
 }
-
 .Logo-Wrapper {
     display: inline-block;
 }
-
 .Img {
     width: 100%;
     max-height: 59px;
@@ -66,11 +57,9 @@ select {
     cursor: pointer;
     margin-left: 25px;
 }
-
 .Search-Box {
     display: flex;
 }
-
 .Ink-Toner {
     border: 1px solid black;
     font-size: 14px;
@@ -80,23 +69,18 @@ select {
     height: 37px;
     margin-left: 90px;
 }
-
-
 .Ink-Toner:hover {
     background-color: rgb(65, 65, 65);
     color: white;
     transition: 0.2s;
 }
-
 .Menu {
     margin: 0;
     padding: 0;
     display: inline-flex;
     list-style: none;
     padding-inline-start: 180px;
-
 }
-
 .Sign-btn {
     border: none;
     display: flex;
@@ -111,7 +95,6 @@ select {
     font-size: 11px;
     line-height: 11px;
 }
-
 .Sign-text {
     color: #595959;
     border-left: 0;
@@ -194,7 +177,7 @@ select {
     /* Strictly for positioning */
 }
 
-.menu-trigger .Chat-icon {
+.menu-trigger .Chat-icon,.Sign-btn {
     margin-top: 7px;
 
 }
@@ -242,7 +225,6 @@ select {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid rgb(218, 217, 217);
     text-align: left;
     background-color: rgb(238, 238, 238);
     height: 34px;
@@ -254,10 +236,164 @@ select {
     font-weight: 700; 
     height: 30px;
     margin: 4px;
-
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+.Link-Btn a:hover {
+    color: #c00;
+    background-color: #fff;
+}
+.Signup-Container{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: right;
 }
 
-.Link-Btn a:hover {
-    color: red;
-    background-color: #fff;
+.Form-Container{
+    width:310px;
+    height: 300px;
+    background-color: rgb(238, 238, 238);
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+.Signin-span{
+    border: unset;
+    cursor: default;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Close-btn-span{
+    border: unset;
+    color: #595959;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.User-Span{
+    border: unset;
+    color: #595959;
+    cursor: default;
+    margin-left: 2px;
+}
+.Pass-Span{
+    border: unset;
+    color: #595959;
+    cursor: default;
+    margin-left: 2px;
+}
+.Pass{
+    margin-left:10px;
+    height: 40px;
+    width: 280px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.Save-User{
+    border: unset;
+    cursor: default;
+    color: #595959;
+    font-size: 15px;
+}
+.Check-box{
+    margin-left: 10px;
+}
+.Signup-btn{
+    border-radius: 30px;
+    border: 1px solid #c00;
+    width: 285px;
+    height: 40px;
+    font-size: 13px;
+    font-weight:600;
+    margin-left: 10px;
+    color: white;
+    background-color: #c00;
+}
+.Signup-btn:hover{
+    background:white;
+    transition: 0.2s;
+    color:#c00;
+}
+.Forgot{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #595959
+}
+
+.Or{
+    border: unset;
+    cursor: default;
+    color: #595959;
+}
+.Forgot-User,.Forgot-Password{
+    color: #c00;
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.Lower-sec{
+    margin-top: 10px;
+}
+.form {
+    background: #f3f3f3;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+.form.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
+}
+.Sign-btn {
+    background: #ffffff;
+    color: #595959;
+    cursor: pointer;
+    display: flex;
+    margin-top: -6px;
+    flex-direction: column;
+    border: none;
+    margin-left: auto;
+     
+}
+
+
+.cart {
+    background: #f3f3f3;
+    position: absolute;
+    top: 110px;
+    right: 24px;
+    border-top:5px solid #c00;
+    width: 350px;
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+.Cart-Data{
+    width:auto;
+    height: 50px;
+    background-color: rgb(238, 238, 238); 
+}
+.Cart-msg{
+    font-size: 14px;
+    padding:30px 70px;
+}
+
+.cart.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
 }

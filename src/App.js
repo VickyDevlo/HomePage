@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Slider from './Components/Silder/Slider';
 import DropDownList from './Components/Products/DropDownList';
@@ -24,16 +24,15 @@ import Costwise from "./Components/Brand/Img/EWAY_COASTWIDE.webp";
 import LowerSection from './Components/LowerSection/LowerSection';
 import Footer from './Components/Footer/Footer';
 import SocialMedia from './Components/SocialMedia/SocialMedia';
-import Copyright from './Components/Copyright/Copyright';
-
+import Copyright from './Components/Copyright/Copyright'; 
  
 function App() {
   return (
     <div className='App'>
       <Router>
          <Nav />
-        <DropDownList  />
-        <Slider/>
+        <DropDownList />
+        {/* <Slider/>
         <Section />
         <Products image={Papper} name='Paper' link='/paper'/>
         <Products image={Toner} name='Ink & Toner' link='/inktoner'/>
@@ -50,9 +49,7 @@ function App() {
         <Brand image={Gry} link='grymattr'/>
         <Brand image={Perk} link='perk'/>
         <Brand image={Costwise} link='costwise'/>  
-
         <LowerSection />
-
         <Footer heading='Customer Service'
           link1='Help Center'
           link2='Contact Us' 
@@ -95,7 +92,7 @@ function App() {
          navlink3='/membership'
          />
         <SocialMedia />
-        <Copyright />  
+        <Copyright />   */}
       </Router> 
     </div>
   );
