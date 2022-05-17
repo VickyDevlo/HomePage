@@ -5,6 +5,7 @@ import {
   SearchOutlined,
   ChatBubbleOutlineRounded,
   ShoppingCartOutlined,
+  KeyboardArrowDown
 } from "@material-ui/icons";
 import Logo from "./img/Logo.png";
 import "./Nav.css";
@@ -15,10 +16,12 @@ const Nav = () => {
   const [isActive, setIsActive] = useState(dropdownRef, false);
   const [isOpen, setIsOpen] = useState(dropdownRef, false);
   const [isLoad, setIsLoad] = useState(dropdownRef, false);
-
+  const [LiveChat, setLiveChat] = useState(dropdownRef, false);
+  
   const onmouseover = () => setIsActive(!isActive);
   const signmouseover = () => setIsOpen(!isOpen);
   const cartmouseover = () => setIsLoad(!isLoad);
+  const ChatHandler = () => setLiveChat(!LiveChat);
 
   const searchHandle = (e) => {
     console.log(e.target.value);
@@ -31,7 +34,19 @@ const Nav = () => {
           <option value="">EN</option>
           <option value="">FR</option>
         </select>
-        <span c>Live Chat</span>
+        <span onClick={ChatHandler}>Live Chat</span>
+        <div  ref={dropdownRef} className={`Chat ${LiveChat ? "close" : "open"}`}> 
+          <div className="Chat-Ofline">
+            <h5>Chat Offline</h5>
+            <KeyboardArrowDown onClick={()=>setLiveChat(!LiveChat)} style={{cursor:'pointer'}}/>
+          </div>
+          <div className="Line-Div-One">
+            <span className="line-one">Staples Professional Live Chat</span>
+          </div>
+          <div className="Line-Div-Two">
+            <span className="line-two">Sorry, there are no chat agents currently available. Please visit our Contact Us page for alternate contact options.</span>
+          </div>
+        </div>
       </div>
       <div className="Middle-Section">
         <div className="Logo-Wrapper">
@@ -48,19 +63,20 @@ const Nav = () => {
         <button className="Search-Btn">
           <SearchOutlined style={{  fontSize: "36px" }} />
         </button>
-        <NavLink to="/ink tonner">
+        <NavLink to="/inktonner">
           <button className="Ink-Toner">Ink & Toner</button>
         </NavLink>
         <ul className="Menu">
           <li className="Form">
             <div className="Signup-Container">
-              <button onMouseEnter={signmouseover} className="Sign-btn">
+              <button onMouseEnter={signmouseover} onMouseLeave={() => setIsOpen(!isOpen)} className="Sign-btn">
                 <PersonOutlineOutlined className="Sign" />
                 <span className="Sign-text">Sign in</span>
               </button>
               <div
-                ref={dropdownRef}
+                ref={dropdownRef} 
                 className={`form ${isOpen ? "close" : "open"}`}
+              
               >
                 <div className="Form-Container">
                   <div className="Header">
@@ -96,28 +112,27 @@ const Nav = () => {
 
           <li>
             <div className="menu-container">
-              <button onMouseEnter={onmouseover} className="menu-trigger">
+              <button onMouseEnter={onmouseover}  onMouseLeave={() => setIsActive(!isActive)}
+              className="menu-trigger">
                 <ChatBubbleOutlineRounded className="Chat-icon" />
                 <span className="Help-text">Help</span>
               </button>
               <nav
                 ref={dropdownRef}
                 className={`menu ${isActive ? "inactive" : "active"}`}
-              >
-                <div className="Link-Btn">
+                
+                >
+                <div className="Link-Btn" >
                   <NavLink to="/contactus">Contact Us</NavLink>
                   <NavLink to="/helpcenter">Help Center</NavLink>
-                  <NavLink to="/recallinformation">
-                    
-                    Recall Information
-                  </NavLink>
+                  <NavLink to="/recallinformation">Recall Information</NavLink>
                 </div>
               </nav>
             </div>
           </li>
 
           <li className="Cart">
-            <button onMouseEnter={ cartmouseover } className="Cart-btn">
+            <button onMouseEnter={ cartmouseover } onMouseLeave={() => setIsLoad(!isLoad)}  className="Cart-btn">
               <ShoppingCartOutlined className="Cart-Icon" />
               <span className="Cart-text">Cart</span>
             </button>

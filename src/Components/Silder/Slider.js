@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Slider = () => {
   return (
-    <div className="Slider">
+    <div className="Slider" >
       <Carousel>
         <Carousel.Item interval={1500}>
           <NavLink to="/banner">

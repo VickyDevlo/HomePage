@@ -13,9 +13,9 @@ import Banner8 from './Img/8.png'
 const Banner = () => {
   return (
       <div>
-        <div className='Banner'>
+        <div className='Banner' >
             <NavLink to='/computer' className='Links'>
-            <img src={Banner1}/>
+            <img src={Banner1} />
             <div className="Banner1">
             </div>
             <div className="Banner2">

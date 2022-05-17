@@ -1,4 +1,4 @@
-.Container{
+.Container {
     background: #fff;
     border-bottom: 1px solid #e7e7e7;
     max-width: 1440px;
@@ -8,15 +8,22 @@
     margin-right: auto;
     margin-left: auto;
 }
-.List{
+
+.List {
     justify-content: center;
-    margin: 10px;
+    margin-bottom: -2px;
     display: flex;
     position: relative;
     width: 100%;
-    list-style: none; 
+    list-style: none;
 }
-.Product,.Services,.Brand,.Deal,.Publications,.User{
+
+.Product,
+.Services,
+.Brand,
+.Deal,
+.Publications,
+.User {
     border: 0;
     padding: 13px 20px;
     text-transform: uppercase;
@@ -24,9 +31,10 @@
     position: relative;
     z-index: 1;
     border-radius: 0;
-    
+
 }
-.List li .Product-btn{
+
+.List li .Product-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -35,7 +43,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List li .Service-btn{
+
+.List li .Service-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -44,7 +53,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List li .Brand-btn{
+
+.List li .Brand-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -53,7 +63,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List li .Deal-btn{
+
+.List li .Deal-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -62,7 +73,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List li .Pub-btn{
+
+.List li .Pub-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -71,7 +83,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List li .Cus-btn{
+
+.List li .Cus-btn {
     color: #444;
     border: none;
     background-color: transparent;
@@ -80,7 +93,8 @@
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-.List button:focus{ 
+
+.List button:focus {
     color: #c00;
 }
 
@@ -88,28 +102,31 @@
     transform: rotate(180deg);
     transition: 0.1s;
 }
+
 .productmenu {
     background: #f3f3f3;
     color: #c00;
     position: absolute;
-    top: 20px;
-    right: -145px;
+    top: 12px;
+    right: -105px;
     width: 280px;
+    height: 780px;
     list-style: none;
     opacity: 0;
     z-index: 20px;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; 
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
- 
+
 .productmenu.active {
     z-index: 2px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-.productmenu li{
+
+.productmenu li {
     color: #444;
     padding: 5px 10px;
     text-decoration: none;
@@ -122,15 +139,17 @@
     margin-left: -30px;
     display: block;
 }
-.productmenu li:hover{
+
+.productmenu li:hover {
     background: #ffffff;
     color: #c00;
 }
+
 .servicemenu {
     background: #f3f3f3;
     color: #c00;
     position: absolute;
-    top: 62px;
+    top: 55px;
     right: 100px;
     width: 280px;
     list-style: none;
@@ -138,7 +157,7 @@
     z-index: 20px;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; 
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 
@@ -148,7 +167,8 @@
     visibility: visible;
     transform: translateY(0);
 }
-.servicemenu li{
+
+.servicemenu li {
     color: #444;
     padding: 5px 10px;
     text-decoration: none;
@@ -161,15 +181,17 @@
     margin-left: -30px;
     display: block;
 }
-.servicemenu li:hover{
+
+.servicemenu li:hover {
     background: #ffffff;
     color: #c00;
 }
+
 .brandmenu {
     background: #f3f3f3;
     color: #c00;
     position: absolute;
-    top: 62px;
+    top: 55px;
     right: 230px;
     width: 280px;
     list-style: none;
@@ -177,7 +199,7 @@
     z-index: 20px;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; 
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 
@@ -187,7 +209,8 @@
     visibility: visible;
     transform: translateY(0);
 }
-.brandmenu li{
+
+.brandmenu li {
     color: #444;
     padding: 5px 10px;
     text-decoration: none;
@@ -200,15 +223,17 @@
     margin-left: -30px;
     display: block;
 }
-.brandmenu li:hover{
+
+.brandmenu li:hover {
     background: #ffffff;
     color: #c00;
 }
+
 .dealmenu {
     background: #f3f3f3;
     color: #c00;
     position: absolute;
-    top: 62px;
+    top: 55px;
     right: 350px;
     width: 280px;
     list-style: none;
@@ -216,7 +241,7 @@
     z-index: 20px;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; 
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 
@@ -226,7 +251,8 @@
     visibility: visible;
     transform: translateY(0);
 }
-.dealmenu li{
+
+.dealmenu li {
     color: #444;
     padding: 5px 10px;
     text-decoration: none;
@@ -239,15 +265,17 @@
     margin-left: -30px;
     display: block;
 }
-.dealmenu li:hover{
+
+.dealmenu li:hover {
     background: #ffffff;
     color: #c00;
 }
+
 .publicmenu {
     background: #f3f3f3;
     color: #c00;
     position: absolute;
-    top: 62px;
+    top: 55px;
     right: 520px;
     width: 280px;
     list-style: none;
@@ -255,7 +283,7 @@
     z-index: 20px;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; 
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 
@@ -265,7 +293,8 @@
     visibility: visible;
     transform: translateY(0);
 }
-.publicmenu li{
+
+.publicmenu li {
     color: #444;
     padding: 5px 10px;
     text-decoration: none;
@@ -278,7 +307,106 @@
     margin-left: -30px;
     display: block;
 }
-.publicmenu li:hover{
+
+.publicmenu li:hover {
     background: #ffffff;
     color: #c00;
+}
+
+.innerproduct {
+    background: white;
+    width: 650px;
+    height: 782px;
+    position: absolute;
+    top: 10px;
+    right: -754px;
+    text-transform: none;
+    visibility: hidden;
+    padding: 50px;
+    z-index: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+
+
+.innerproduct.visible {
+    opacity:1;
+    visibility: hidden;
+    z-index: 1;
+    transform: translateY(0);
+}
+
+.innerproduct li {
+    font-size: 13px;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    
+}
+.innerproduct li:hover {
+   color: #c00;
+
+}
+.ProductMenu-List:active {
+   color: #c00;
+
+}
+
+.Close-Product {
+    justify-content: flex-end;
+    display: flex;
+}
+.close-product-menu {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.close-product-menu:active {
+    color: black;
+}
+
+.innerproduct .computer-component,.computer-access {
+    font-weight: 700;
+    color: black;
+}
+
+.Product_Image img {
+    width: 616px;
+    position: relative;
+    top: -193px;
+    left: -30px;
+}
+
+.ComputerCompo {
+    position: relative;
+    top: -292px;
+    left: 243px;
+}
+.subProduct{
+    background: white;
+    width: 650px;
+    height: 700px;
+    position: absolute;
+    top: 70px;
+    right:0px;
+    text-transform: none;
+    padding: 50px;
+    z-index: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+.subProduct.open {
+    opacity:1;
+    visibility: visible;
+    z-index: 1;
+    transform: translateY(0);
+}
+.subProduct.close {
+    display: none;
 }
