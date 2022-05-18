@@ -74,119 +74,13 @@ const DropDownList = () => {
                 </ul>
 
                 {/* Inner Product List */}
-                <div className='Inner-Product-List'>
+                <div>
                   <ul
                     className={`innerproduct ${
                       Products ? "invisible" : "visible"
                     }`}
-                  >
-                    <div className="Close-Product">
-                      <button
-                        onClick={() => SetProducts(!Products)}
-                        className="close-product-menu"
-                      >
-                        X
-                      </button>
-                    </div>
-
-                    <div
-                      ref={Flip}
-                      className={`subProduct ${ProductList ? "open" : "close"}`} 
-                    >
-                      <NavLink to="/computeraccessories">
-                        <li className="computer-access">
-                          Computer Accessories
-                        </li>
-                      </NavLink>
-                      <NavLink to="/batteriesandpowersupply">
-                        <li>Batteries & Power Supply</li>
-                      </NavLink>
-                      <NavLink to="/batteries">
-                        <li>Batteries</li>
-                      </NavLink>
-                      <NavLink to="/computercables">
-                        <li>Computer Cables</li>
-                      </NavLink>
-                      <NavLink to="/computerheadsetsmicrophones">
-                        <li>Computer Headsets & Microphones</li>
-                      </NavLink>
-                      <NavLink to="/datastorage">
-                        <li>Data Storage</li>
-                      </NavLink>
-                      <NavLink to="/electroniccleaning">
-                        <li>Electronic Cleaning</li>
-                      </NavLink>
-                      <NavLink to="/laptopbagsandsleeves">
-                        <li>Laptop Bags & Sleeves</li>
-                      </NavLink>
-                      <NavLink to="/miceandkeyboards">
-                        <li>Mice & Keyboards</li>
-                      </NavLink>
-                      <NavLink to="/moniterstandsandscreenfilters">
-                        <li>Monitor Stands & Screen Filters</li>
-                      </NavLink>
-                      <NavLink to="/monitorsandaccessories">
-                        <li>Monitors & Accessories</li>
-                      </NavLink>
-                      <NavLink to="/networking">
-                        <li>Networking</li>
-                      </NavLink>
-                      <NavLink to="/pcheadsets">
-                        <li>PC Headsets</li>
-                      </NavLink>
-                      <NavLink to="/pcspeakers">
-                        <li>PC Speakers</li>
-                      </NavLink>
-                      <NavLink to="/webcams">
-                        <li>Webcams</li>
-                      </NavLink>
-                      <div className="ComputerCompo">
-                        <NavLink to="/computerscomponents">
-                          <li className="computer-component">
-                            Computer Components
-                          </li>
-                        </NavLink>
-                        <NavLink to="/cddvdandbluraydrivers">
-                          <li>CD, DVD & Blu-Ray Drives</li>
-                        </NavLink>
-                        <NavLink to="/computercases">
-                          <li>Computer Cases</li>
-                        </NavLink>
-                        <NavLink to="/computermemoryram">
-                          <li>Computer Memory (RAM)</li>
-                        </NavLink>
-                        <NavLink to="/computerpowersupplies">
-                          <li>Computer Power Supplies</li>
-                        </NavLink>
-                        <NavLink to="/cpuandcomputerprocessors">
-                          <li>CPU & Computer Processors</li>
-                        </NavLink>
-                        <NavLink to="/graphicscards">
-                          <li>Graphics Cards</li>
-                        </NavLink>
-                        <NavLink to="/hubs">
-                          <li>Hubs</li>
-                        </NavLink>
-                        <NavLink to="/motherboards">
-                          <li>Motherboards</li>
-                        </NavLink>
-                        <NavLink to="/networkinterfacecards">
-                          <li>Network Interface Cards</li>
-                        </NavLink>
-                        <NavLink to="/software">
-                          <li>Software</li>
-                        </NavLink>
-                      </div>
-                      <div className="Product_Image">
-                        <NavLink to="/productimg">
-                          <img src={Product_Img} alt="product" />
-                        </NavLink>
-                      </div>
-                    </div>
-                  </ul>
+                  ></ul>
                 </div>
-
-                <div></div>
               </div>
             </div>
           </li>
