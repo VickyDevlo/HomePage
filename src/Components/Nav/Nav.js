@@ -70,7 +70,7 @@ const Nav = () => {
         <ul className="Menu">
           <li className="Form">
             <div className="Signup-Container">
-              <button onMouseEnter={signmouseover} onMouseLeave={() => setIsOpen(!isOpen)} className="Sign-btn">
+              <button onMouseEnter={signmouseover}  className="Sign-btn">
                 <PersonOutlineOutlined className="Sign" />
                 <span className="Sign-text">Sign in</span>
               </button>
@@ -88,7 +88,9 @@ const Nav = () => {
                       Close
                     </span>
                   </div>
-                  <div className="Input-Field">
+                  <div onMouseLeave={() => setIsOpen(!isOpen)}>
+
+                  <div className="Input-Field" >
                     <span className="User-Span">User ID</span> <br />
                     <input type="text" className="Pass" /> <br />
                     <span className="Pass-Span">Password</span> <br />
@@ -104,6 +106,7 @@ const Nav = () => {
                       <label className="Or">or</label>
                       <span className="Forgot-Password">Password?</span>
                     </label>
+                  </div>
                   </div>
                 </div>
               </div>

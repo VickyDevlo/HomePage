@@ -2,7 +2,6 @@ import "./DropDownList.css";
 import React, { useState, useRef } from "react";
 import { KeyboardArrowDown } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
-import Product_Img from "./Img/Prodcut_Img.png";
 
 const DropDownList = () => {
   const Flip = useRef(null);
@@ -72,19 +71,9 @@ const DropDownList = () => {
                     <li>Print & Promo</li>
                   </NavLink>
                 </ul>
-
-                {/* Inner Product List */}
-                <div>
-                  <ul
-                    className={`innerproduct ${
-                      Products ? "invisible" : "visible"
-                    }`}
-                  ></ul>
-                </div>
               </div>
             </div>
           </li>
-
           {/* Service List */}
           <li className="Services">
             <button className="Service-btn" onClick={ServiceHandler}>

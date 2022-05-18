@@ -33,11 +33,11 @@
     border-radius: 0;
 
 }
-
-.List li .Product-btn {
+.List li .Product-btn{
     color: #444;
-    border: none;
     background-color: transparent;
+    border: none;
+    border: 1px solid transparent;
     overflow: visible;
     font-size: 13px;
     font-weight: 600;
@@ -313,3 +313,4 @@
     color: #c00;
 }
 
+ 
