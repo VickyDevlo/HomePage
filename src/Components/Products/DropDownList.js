@@ -2,11 +2,9 @@ import "./DropDownList.css";
 import React, { useState, useRef } from "react";
 import { KeyboardArrowDown } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
-import Product_Img from './Img/Prodcut_Img.png'  
- 
+import Product_Img from "./Img/Prodcut_Img.png";
 
 const DropDownList = () => {
-
   const Flip = useRef(null);
   const [Products, SetProducts] = useState(Flip);
   const [Services, SetServices] = useState(Flip);
@@ -14,14 +12,13 @@ const DropDownList = () => {
   const [Deals, SetDeals] = useState(Flip);
   const [Public, SetPublic] = useState(Flip);
   const [ProductList, SetProductList] = useState(Flip);
-  
+
   const ProductHadler = () => SetProducts(!Products);
   const ServiceHandler = () => SetServices(!Services);
   const BrandHandler = () => SetBrands(!Brands);
   const DealHandler = () => SetDeals(!Deals);
   const PublicHandler = () => SetPublic(!Public);
   const ComputerAccessView = () => SetProductList(!ProductList);
-   
 
   return (
     <div className="Container">
@@ -31,161 +28,179 @@ const DropDownList = () => {
             <button className="Product-btn" onClick={ProductHadler}>
               PRODUCTS{" "}
               <KeyboardArrowDown
-                className={`rotate ${Products ? "inactive" : "active"}`}
+                className={`rotate ${Products ? "Inctive" : "Active"}`}
               />
             </button>
             <div className="menu-container">
-              <div className="ProductMenu-List">                  
-                  <ul className={`productmenu ${Products ? "inactive" : "active"}`} >
-                      <NavLink to="/computeraccessories">
-                      <li onMouseEnter={ComputerAccessView} 
-                      >Computer Accessories & Components</li>
-                      </NavLink>
-                      <NavLink to="/computers">
-                      <li  >Computers</li>
-                      </NavLink>
-                      <NavLink to="/electronics">
-                      <li>Electronics</li>
-                      </NavLink>
-                      <NavLink to="/food&cleaning">
-                      <li>Food & Cleaning</li>
-                      </NavLink>
-                      <NavLink to="/furniture&home">
-                      <li>Furniture & Home</li>
-                      </NavLink>
-                      <NavLink to="/ink&officemachines">
-                      <li>Ink & Office Machines</li>
-                      </NavLink>
-                      <NavLink to="/officesupplies">
-                      <li>Office Supplies</li>
-                      </NavLink>
-                      <NavLink to="/warehouse&facilities">
-                      <li>Warehouse & Facilities</li>
-                    </NavLink>
-                    <NavLink to="/customproducts">
-                      <li>Custom Products</li>
-                    </NavLink>
-                    <NavLink to="/health&safety">
-                      <li>Health & Safety</li>
-                      </NavLink>
-                    <NavLink to="/print&promo">
-                      <li>Print & Promo</li>
-                      </NavLink>
+              <div className="ProductMenu-List">
+                <ul
+                  className={`productmenu ${Products ? "Inctive" : "Active"}`}
+                >
+                  <NavLink to="/computeraccessories">
+                    <li onMouseEnter={ComputerAccessView}>
+                      Computer Accessories & Components
+                    </li>
+                  </NavLink>
+                  <NavLink to="/computers">
+                    <li>Computers</li>
+                  </NavLink>
+                  <NavLink to="/electronics">
+                    <li>Electronics</li>
+                  </NavLink>
+                  <NavLink to="/food&cleaning">
+                    <li>Food & Cleaning</li>
+                  </NavLink>
+                  <NavLink to="/furniture&home">
+                    <li>Furniture & Home</li>
+                  </NavLink>
+                  <NavLink to="/ink&officemachines">
+                    <li>Ink & Office Machines</li>
+                  </NavLink>
+                  <NavLink to="/officesupplies">
+                    <li>Office Supplies</li>
+                  </NavLink>
+                  <NavLink to="/warehouse&facilities">
+                    <li>Warehouse & Facilities</li>
+                  </NavLink>
+                  <NavLink to="/customproducts">
+                    <li>Custom Products</li>
+                  </NavLink>
+                  <NavLink to="/health&safety">
+                    <li>Health & Safety</li>
+                  </NavLink>
+                  <NavLink to="/print&promo">
+                    <li>Print & Promo</li>
+                  </NavLink>
                 </ul>
 
                 {/* Inner Product List */}
-                <div >                   
-                  <ul className={`innerproduct ${Products ? 'invisible' : 'visible'}`}>
+                <div className='Inner-Product-List'>
+                  <ul
+                    className={`innerproduct ${
+                      Products ? "invisible" : "visible"
+                    }`}
+                  >
                     <div className="Close-Product">
-                       <button onClick={()=>SetProducts(!Products)} className='close-product-menu'> X </button>   
+                      <button
+                        onClick={() => SetProducts(!Products)}
+                        className="close-product-menu"
+                      >
+                        X
+                      </button>
                     </div>
-                  <div  ref={Flip}
-                   className={`subProduct ${ProductList ? "open" : "close"}`}>
-                  <NavLink to="/computeraccessories">
-                  <li  className='computer-access'>Computer Accessories</li>
-                  </NavLink>
-                  <NavLink to="/batteriesandpowersupply">
-                  <li>Batteries & Power Supply</li>
-                  </NavLink>
-                  <NavLink to="/batteries">
-                  <li>Batteries</li>
-                  </NavLink>
-                  <NavLink to="/computercables">
-                  <li>Computer Cables</li>
-                  </NavLink>
-                  <NavLink to="/computerheadsetsmicrophones">
-                  <li>Computer Headsets & Microphones</li>
-                  </NavLink>
-                  <NavLink to="/datastorage">
-                  <li>Data Storage</li>
-                  </NavLink>
-                  <NavLink to="/electroniccleaning">
-                  <li>Electronic Cleaning</li>
-                  </NavLink>
-                  <NavLink to="/laptopbagsandsleeves">
-                  <li>Laptop Bags & Sleeves</li>
-                  </NavLink>
-                  <NavLink to="/miceandkeyboards">
-                  <li>Mice & Keyboards</li>
-                  </NavLink>
-                  <NavLink to="/moniterstandsandscreenfilters">
-                  <li>Monitor Stands & Screen Filters</li>
-                  </NavLink>
-                  <NavLink to="/monitorsandaccessories">
-                  <li>Monitors & Accessories</li>
-                  </NavLink>
-                  <NavLink to="/networking">
-                  <li>Networking</li>
-                  </NavLink>
-                  <NavLink to="/pcheadsets">
-                  <li>PC Headsets</li>
-                  </NavLink>
-                  <NavLink to="/pcspeakers">
-                  <li>PC Speakers</li>
-                  </NavLink>
-                  <NavLink to="/webcams">
-                  <li>Webcams</li>
-                  </NavLink>
-                  <div className="ComputerCompo">
 
-                  <NavLink to="/computerscomponents">
-                  <li  className='computer-component'>Computer Components</li>
-                  </NavLink>
-                  <NavLink to="/cddvdandbluraydrivers">
-                  <li>CD, DVD & Blu-Ray Drives</li>
-                  </NavLink>
-                  <NavLink to="/computercases">
-                  <li>Computer Cases</li>
-                  </NavLink>
-                  <NavLink to="/computermemoryram">
-                  <li>Computer Memory (RAM)</li>
-                  </NavLink>
-                  <NavLink to="/computerpowersupplies">
-                  <li>Computer Power Supplies</li>
-                  </NavLink>
-                  <NavLink to="/cpuandcomputerprocessors">
-    
-                  <li>CPU & Computer Processors</li>
-                  </NavLink>
-                  <NavLink to="/graphicscards">
-                  <li>Graphics Cards</li>
-                  </NavLink>
-                  <NavLink to="/hubs">
-                  <li>Hubs</li>
-                  </NavLink>
-                  <NavLink to="/motherboards">
-                  <li>Motherboards</li>
-                  </NavLink>
-                  <NavLink to="/networkinterfacecards">
-                  <li>Network Interface Cards</li>
-                  </NavLink>
-                  <NavLink to="/software">
-                     <li>Software</li>  
-                  </NavLink>
-                  </div>
-                  <div className="Product_Image">
-                    <NavLink to='/productimg'>
-                    <img src={Product_Img} alt="" />
-                    </NavLink>
-                  </div>
-                  </div>
-                  </ul> 
+                    <div
+                      ref={Flip}
+                      className={`subProduct ${ProductList ? "open" : "close"}`} 
+                    >
+                      <NavLink to="/computeraccessories">
+                        <li className="computer-access">
+                          Computer Accessories
+                        </li>
+                      </NavLink>
+                      <NavLink to="/batteriesandpowersupply">
+                        <li>Batteries & Power Supply</li>
+                      </NavLink>
+                      <NavLink to="/batteries">
+                        <li>Batteries</li>
+                      </NavLink>
+                      <NavLink to="/computercables">
+                        <li>Computer Cables</li>
+                      </NavLink>
+                      <NavLink to="/computerheadsetsmicrophones">
+                        <li>Computer Headsets & Microphones</li>
+                      </NavLink>
+                      <NavLink to="/datastorage">
+                        <li>Data Storage</li>
+                      </NavLink>
+                      <NavLink to="/electroniccleaning">
+                        <li>Electronic Cleaning</li>
+                      </NavLink>
+                      <NavLink to="/laptopbagsandsleeves">
+                        <li>Laptop Bags & Sleeves</li>
+                      </NavLink>
+                      <NavLink to="/miceandkeyboards">
+                        <li>Mice & Keyboards</li>
+                      </NavLink>
+                      <NavLink to="/moniterstandsandscreenfilters">
+                        <li>Monitor Stands & Screen Filters</li>
+                      </NavLink>
+                      <NavLink to="/monitorsandaccessories">
+                        <li>Monitors & Accessories</li>
+                      </NavLink>
+                      <NavLink to="/networking">
+                        <li>Networking</li>
+                      </NavLink>
+                      <NavLink to="/pcheadsets">
+                        <li>PC Headsets</li>
+                      </NavLink>
+                      <NavLink to="/pcspeakers">
+                        <li>PC Speakers</li>
+                      </NavLink>
+                      <NavLink to="/webcams">
+                        <li>Webcams</li>
+                      </NavLink>
+                      <div className="ComputerCompo">
+                        <NavLink to="/computerscomponents">
+                          <li className="computer-component">
+                            Computer Components
+                          </li>
+                        </NavLink>
+                        <NavLink to="/cddvdandbluraydrivers">
+                          <li>CD, DVD & Blu-Ray Drives</li>
+                        </NavLink>
+                        <NavLink to="/computercases">
+                          <li>Computer Cases</li>
+                        </NavLink>
+                        <NavLink to="/computermemoryram">
+                          <li>Computer Memory (RAM)</li>
+                        </NavLink>
+                        <NavLink to="/computerpowersupplies">
+                          <li>Computer Power Supplies</li>
+                        </NavLink>
+                        <NavLink to="/cpuandcomputerprocessors">
+                          <li>CPU & Computer Processors</li>
+                        </NavLink>
+                        <NavLink to="/graphicscards">
+                          <li>Graphics Cards</li>
+                        </NavLink>
+                        <NavLink to="/hubs">
+                          <li>Hubs</li>
+                        </NavLink>
+                        <NavLink to="/motherboards">
+                          <li>Motherboards</li>
+                        </NavLink>
+                        <NavLink to="/networkinterfacecards">
+                          <li>Network Interface Cards</li>
+                        </NavLink>
+                        <NavLink to="/software">
+                          <li>Software</li>
+                        </NavLink>
+                      </div>
+                      <div className="Product_Image">
+                        <NavLink to="/productimg">
+                          <img src={Product_Img} alt="product" />
+                        </NavLink>
+                      </div>
+                    </div>
+                  </ul>
                 </div>
-                <div > 
-                </div>
+
+                <div></div>
               </div>
             </div>
           </li>
+
           {/* Service List */}
           <li className="Services">
             <button className="Service-btn" onClick={ServiceHandler}>
               SERVICES & SOLUTIONS{" "}
               <KeyboardArrowDown
-                className={`rotate ${Services ? "inactive" : "active"}`}
+                className={`rotate ${Services ? "Inctive" : "Active"}`}
               />
             </button>
             <div className="ServicesMenu">
-              <ul className={`servicemenu ${Services ? "inactive" : "active"}`}>
+              <ul className={`servicemenu ${Services ? "Inctive" : "Active"}`}>
                 <NavLink to="/flowerdeliveryservcies">
                   <li>Flower Delivery Services</li>
                 </NavLink>
@@ -242,11 +257,11 @@ const DropDownList = () => {
             <button className="Brand-btn">
               BRANDS{" "}
               <KeyboardArrowDown
-                className={`rotate ${Brands ? "inactive" : "active"}`}
+                className={`rotate ${Brands ? "Inctive" : "Active"}`}
               />
             </button>
             <div className="BrandMenu">
-              <ul className={`brandmenu ${Brands ? "inactive" : "active"}`}>
+              <ul className={`brandmenu ${Brands ? "Inctive" : "Active"}`}>
                 <NavLink to="/coastwideprofessional">
                   <li>Coastwide Professional</li>
                 </NavLink>
@@ -276,11 +291,11 @@ const DropDownList = () => {
             <button className="Deal-btn" onClick={DealHandler}>
               DEALS{" "}
               <KeyboardArrowDown
-                className={`rotate ${Deals ? "inactive" : "active"}`}
+                className={`rotate ${Deals ? "Inctive" : "Active"}`}
               />
             </button>
             <div className="DealMenu">
-              <ul className={`dealmenu ${Deals ? "inactive" : "active"}`}>
+              <ul className={`dealmenu ${Deals ? "Inctive" : "Active"}`}>
                 <NavLink to="/staplesnewproductsslyer">
                   <li>Staples New Products Flyer</li>
                 </NavLink>
@@ -298,11 +313,11 @@ const DropDownList = () => {
             <button className="Pub-btn" onClick={PublicHandler}>
               PUBLICATIONS{" "}
               <KeyboardArrowDown
-                className={`rotate ${Public ? "inactive" : "active"}`}
+                className={`rotate ${Public ? "Inctive" : "Active"}`}
               />
             </button>
             <div className="PublicationsMenu">
-              <ul className={`publicmenu ${Public ? "inactive" : "active"}`}>
+              <ul className={`publicmenu ${Public ? "Inctive" : "Active"}`}>
                 <NavLink to="/2021facilitymanagersguide">
                   <li>2021 Facility Managers Guide</li>
                 </NavLink>
@@ -346,7 +361,6 @@ const DropDownList = () => {
             </NavLink>
           </li>
         </ul>
-      
       </div>
     </div>
   );

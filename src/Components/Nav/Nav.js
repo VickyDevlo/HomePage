@@ -11,6 +11,7 @@ import Logo from "./img/Logo.png";
 import "./Nav.css";
 
 const Nav = () => {
+
   const dropdownRef = useRef(null);
 
   const [isActive, setIsActive] = useState(dropdownRef, false);
@@ -24,7 +25,7 @@ const Nav = () => {
   const ChatHandler = () => setLiveChat(!LiveChat);
 
   const searchHandle = (e) => {
-    console.log(e.target.value);
+    console.log(e.target.value); 
   };
 
   return (
@@ -75,8 +76,7 @@ const Nav = () => {
               </button>
               <div
                 ref={dropdownRef} 
-                className={`form ${isOpen ? "close" : "open"}`}
-              
+                className={`form ${isOpen ? "close" : "open"}`}   
               >
                 <div className="Form-Container">
                   <div className="Header">
@@ -119,7 +119,7 @@ const Nav = () => {
               </button>
               <nav
                 ref={dropdownRef}
-                className={`menu ${isActive ? "inactive" : "active"}`}
+                className={`menu ${isActive ? "Inactive" : "Active"}`}
                 
                 >
                 <div className="Link-Btn" >
@@ -132,7 +132,7 @@ const Nav = () => {
           </li>
 
           <li className="Cart">
-            <button onMouseEnter={ cartmouseover } onMouseLeave={() => setIsLoad(!isLoad)}  className="Cart-btn">
+            <button onMouseEnter={ cartmouseover } onMouseLeave={() => setIsLoad(!isLoad)} className="Cart-btn">
               <ShoppingCartOutlined className="Cart-Icon" />
               <span className="Cart-text">Cart</span>
             </button>
@@ -140,10 +140,12 @@ const Nav = () => {
                 ref={dropdownRef}
                 className={`cart ${isLoad ? "hide" : "show"}`}
               >
+        
+
                 <div className="Cart-Data">
                 <label className="Cart-msg">To use this feature, please sign in or become a customer</label>
                 </div>
-             </div>
+               </div>
 
           </li>
         </ul>
